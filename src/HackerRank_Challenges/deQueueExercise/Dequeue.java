@@ -39,12 +39,8 @@ public class Dequeue {
                 if(map.get(numToRemove) == 0)
                     uniqueNum.remove(numToRemove);
 
-                if (uniqueNum.contains(num)){
-                    map.put(num, map.get(num) + 1);
-
-                } else {
+                if(!uniqueNum.contains(num)){
                     uniqueNum.add(num);
-                    map.put(num,1);
                 }
             }
 
